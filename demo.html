@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="lazyload.js"></script>
+</head>
+<body>
+  <div class="full-viewport-height">
+    <h2>Scroll Down</h2>
+  </div>
+
+  <div class="description">
+    <h2>Embedded Video</h2>
+    <ul>
+      <li>Generates source element for each URL provided in <code>data-video-urls</code> attribute (URL list comma separated).</li>
+    </ul>
+  </div>
+
+  <div class="full-viewport-height">
+    <div class="container">
+      <video autoplay controls playsinline muted loop
+             data-video-urls="https://nauto-public.s3.amazonaws.com/videos/simulations/Distracted+Driving_Simulation.mp4,https://nauto-public.s3.amazonaws.com/videos/simulations/Distracted+Driving_Simulation.webm">
+      </video>
+    </div>
+  </div>
+
+  <div class="description">
+    <h2>Embedded Video</h2>
+    <ul>
+      <li>Generates <code>video</code> element with default attributes: <code>autoplay</code>, <code>loop</code>, <code>muted</code>, <code>playsinline</code>.</li>
+      <li>Generates <code>source</code> element within <code>video</code> element for each URL provided in <code>data-video-urls</code> attribute (URL list comma separated).</li>
+      <li>Sets background image of <code>div</code> to value of <code>data-poster-url</code> attribute.</li>
+    </ul>
+  </div>
+
+  <div class="full-viewport-height">
+    <h2>Background Video</h2>
+    <div class="container background-video"
+         data-poster-url="https://uploads-ssl.webflow.com/5fad6c99ab11b76de2b9bda1/5faea74ec31bc71f98e82795_nauto-video-poster-00001.jpg"
+         data-video-urls="https://uploads-ssl.webflow.com/5fad6c99ab11b76de2b9bda1/5faea74ec31bc71f98e82795_nauto-video-transcode.mp4,https://uploads-ssl.webflow.com/5fad6c99ab11b76de2b9bda1/5faea74ec31bc71f98e82795_nauto-video-transcode.webm"
+         >
+         <p class="text-overlay">Text overlaid on video.</p>
+    </div>
+  </div>
+
+  <div class="description">
+    <h2>Embedded Video</h2>
+    <ul>
+      <li>Sets <code>src</code> attribute with value of <code>data-src</code> attribute.</li>
+    </ul>
+  </div>
+
+  <div class="full-viewport-height">
+    <h2>Embedded Image</h2>
+    <div class="container embedded-image">
+      <img data-src="https://picsum.photos/600/350" />
+    </div>
+  </div>
+
+  <div class="description">
+    <h2>Embedded Video</h2>
+    <ul>
+      <li>Sets background image using URL from <code>data-src</code>> attribute.</li>
+    </ul>
+  </div>
+
+  <div class="full-viewport-height">
+    <h2>Background Image</h2>
+    <div class="container background-image"
+         data-src="https://uploads-ssl.webflow.com/5fad6c99ab11b76de2b9bda1/5fad6eb463fbc97636c55fb6_nautDistracted-OpenGraph-1800.jpg">
+         <p class="text-overlay">Text overlaid on image.</p>
+    </div>
+  </div>
+</body>
+</html>
