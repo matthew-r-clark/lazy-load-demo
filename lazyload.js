@@ -2,7 +2,7 @@ let LOGGING_ENABLED = true;
 const DISTANCE_BELOW_VIEWPORT = 0;
 
 window.addEventListener('load', function() {
-  let $videoEmbeds = $('video'),
+  let $videoEmbeds = $('video[data-video-urls]'),
       $videoBgContainers = $('.background-video'),
       $imageEmbeds = $('img[data-src]'),
       $imageBgContainers = $('.background-image');
